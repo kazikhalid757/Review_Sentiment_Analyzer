@@ -5,7 +5,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.layers import Embedding, LSTM, Dense, Dropout
 from tensorflow.keras.models import Sequential
 
-data = pd.read_csv(r"C:\Users\kazit\Downloads\Data\Restaurant_Reviews.csv")
+data = pd.read_csv(r"Restaurant_Reviews.csv")
 
 # Extract 'review_text' and 'sentiment' columns from the DataFrame
 reviews = data['review_text'].tolist()
